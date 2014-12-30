@@ -1,4 +1,4 @@
-h2 {
+noscript > h2 {
     color: white;
     text-align: center;
 }
@@ -17,8 +17,32 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.clik-card {
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 0.5em;
+    margin-top: 20px;
 }
 
 @media (min-width:768px){.content{width:750px}}
 @media (min-width:992px){.content{width:970px}}
 @media (min-width:1200px){.content{width:1170px}}
+
+#timer-wrapper {
+    display:none;
+}
+
+.central {
+    text-align:center;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}

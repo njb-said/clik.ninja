@@ -9,20 +9,37 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="//cdn.imnjb.me/libs/bootswatch/3.3.1.2/paper/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.imnjb.me/libs/fontawesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.imnjb.me/libs/jquery.ui/1.11.2/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.imnjb.me/libs/alertjs/css/alertjs.min.css">
     <link rel="stylesheet" type="text/css" href="app.css">
 </head>
-<body style="background-color: #D48E73">
+<body style="background-color: #C457CA">
     <noscript>
         <h2>You need javascript to use this website!</h2>
     </noscript>
 
     <div class="content">
-        <p>Clicks: <span id="clicks">0</span></p>
-        <p>Timer: <span id="timer">0</span></p>
+        <div class="attempt" style="display:none;">
+            <div class="central">
+                <h2>Clicks: <span id="clicks">0</span><br><small id="timer-wrapper">Timer: <span id="timer">0</span></small></h2>
+            </div>
+        </div>
+        <div class="submit clik-card container" style="display:none;">
+            <h2 class="text-center">Save your score!</h2>
+            <div class="form-group">
+                <label>Username</label>
+                <input class="form-control" name="username" required autofocus>
+            </div>
+            <div class="form-group">
+                <label>Your Score</label>
+                <input readonly class="form-control" name="score" value="">
+            </div>
+            <button class="save-score btn btn-info">Submit</button>
+        </div>
     </div>
 
     <script type="text/javascript" src="//cdn.imnjb.me/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.imnjb.me/libs/jquery.ui/1.11.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="//cdn.imnjb.me/libs/alertjs/js/alertjs.min.js"></script>
     <script type="text/javascript" src="//cdn.imnjb.me/libs/alertjs/js/alertjs.sounds.js"></script>
     <script type="text/javascript" src="//cdn.imnjb.me/libs/bootstrap/3.3.1/js/bootstrap.min.js"></script>
