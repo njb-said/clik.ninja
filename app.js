@@ -1,3 +1,6 @@
+$(document).ready(function(){if($("[rel=tooltip]").length){$("[rel=tooltip]").tooltip();}$("body").hide().show();});
+
+
 AlertJS.setSetting("timeout", 3000);
 $(document).ready(function() {
     $('noscript').fadeOut("slow", function() {
